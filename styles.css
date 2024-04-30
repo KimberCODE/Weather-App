@@ -1,3 +1,139 @@
+*{
+  font-family: Georgia, Times, 'Times New Roman', serif
+}
+/* Navbar Area */
+.container-fluid {
+  background-color: #7092a1;
+  justify-content: center;
+}
+
+#zip {
+  background-color: #c9dbe3;
+}
+
+nav,
+#zip,
+#areaZip {
+  height: 25px;
+}
+
+.d-flex {
+  justify-content: flex-end;
+  text-align: right;
+}
+form {
+  width: 100vw;
+}
+/* Location */
+#location {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  border-radius: 50px;
+  border-color: #7092a1;
+  border-width: 2px;
+  background-color: #7092a1;
+  width: 50%;
+}
+#location-img-bckgrd {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px;
+  background-color: #c9dbe3;
+  width: 100vw;
+  margin: 0px;
+  padding: 20px;
+}
+#locationInfo {
+  display: flex;
+  justify-content: space-evenly;
+  width: 500px;
+}
+
+/* Current Info */
+#current-temp,
+#feels-like,
+#short-description {
+  justify-content: center;
+  align-items: center;
+}
+
+/* Precipitation Container */
+#precipitation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #7092a1;
+}
+
+#humid,
+#rain,
+#wind {
+  border-radius: 50px;
+  font-size: 10pt;
+  background-color: #c9dbe3;
+  border-color: #c9dbe3;
+  margin: 20px;
+  height: 40px;
+  width: 90px;
+}
+@media (max-width: 350px) {
+  #precipitation {
+    flex-direction: column;
+  }
+}
+
+
+@media (max-width: 250px) {
+  #location {
+    font-size: 8pt;
+  }
+}
+@media (min-width: 350px) {
+  #location {
+    font-size: 12pt;
+  }
+}
+
+/* Bottom Info/Breakdown */
+#btm-precip-info {
+  background-color: #c9dbe3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+}
+#precip-btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-color: #c9dbe3;
+}
+#headline {
+  margin: 0;
+  padding: 10px;
+  background-color: #7092a1;
+  border-radius: 50px;
+  border-color: #7092a1;
+  border-width: 2px;
+  width: 50%;
+  text-align: center;
+}
+#weather-breakdowns{
+  padding: 10px;;
+}
+
+/* Circle Buttons */
 .circle {
-    border-radius: 50%;
+  background-color: #7092a1;
+  border-radius: 50%;
+  display: inline-block;
+  border: black 1px solid;
+  width: 8px;
+  height: 8px;
+  margin: 5px;
 }

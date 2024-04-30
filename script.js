@@ -12,6 +12,8 @@ zipCodeBtn.addEventListener('click', function (event) {
     //This clears the info before the .fetch()
     const headlines = document.getElementById('headline');
     headlines.innerHTML = '';
+    headlines.style.margin = 0;
+
     const weatherBrkdwn = document.getElementById('weather-breakdowns');
     weatherBrkdwn.innerHTML = '';
 
@@ -38,21 +40,27 @@ zipCodeBtn.addEventListener('click', function (event) {
             } = data;
             //Location:
             const cityName = document.getElementById('location');
-            cityName.innerText = "Location " + name + ', ' + region;
+            cityName.innerText = name + ', ' + region;
 
-            const timeZone = document.getElementById('short-description');
-            timeZone.innerText = "Time Zone " + tz_id;
             //Current:
+            const timeZone = document.getElementById('short-description');
+            timeZone.innerText = tz_id;
+
             const currentTemp = document.getElementById('current-temp');
             currentTemp.innerText = 'Current Temp ' + temp_f + '°';
             const feelsLike = document.getElementById('feels-like');
             feelsLike.innerText = "Feels Like " + feelslike_f + '°';
 
             //This is how the mentor helped me get the icon working.
+            const iconCont = document.getElementById('icon-cont');
+            iconCont.innerHTML = '';
             const statusImg = document.createElement('img');
             statusImg.classList.add('status-icon');
             statusImg.src = icon;
-            currentTemp.appendChild(statusImg);
+            iconCont.appendChild(statusImg);
+
+
+            
 
 
 //-----------------------------------------------------------------
@@ -75,6 +83,7 @@ zipCodeBtn.addEventListener('click', function (event) {
                     pressureIn.innerText = "Pressure " + pressure_in + 'in';
                     const pressureMetric = document.createElement('p');
                     pressureMetric.innerText = "Pressure (metric) " + pressure_mb + 'mb';
+                    pressureMetric.style.margin = 0;
                     weatherBrkdwn.appendChild(humidPercent);
                     weatherBrkdwn.appendChild(pressureIn);
                     weatherBrkdwn.appendChild(pressureMetric);
@@ -96,6 +105,7 @@ zipCodeBtn.addEventListener('click', function (event) {
                     const precipIn = document.createElement('p');
                     precipIn.innerText = precip_in + ' in';
                     const precipMM = document.createElement('p');
+                    precipMM.style.margin = 0;
                     precipMM.innerText = precip_mm + ' mm';
                     weatherBrkdwn.appendChild(precipIn);
                     weatherBrkdwn.appendChild(precipMM);
@@ -109,7 +119,7 @@ zipCodeBtn.addEventListener('click', function (event) {
     //Wind 
 
             const wind = document.getElementById('wind');
-            const windCircleBtn = document.getElementById('circle-2');
+            const windCircleBtn = document.getElementById('circle-3');
             const windBtnEvent = (btn) => {
                 btn.addEventListener('click', function () {
                     const headlines = document.getElementById('headline');
@@ -125,6 +135,7 @@ zipCodeBtn.addEventListener('click', function (event) {
                     const windDirect = document.createElement('p');
                     windDirect.innerText = wind_dir;
                     const windGust = document.createElement('p');
+                    windGust.style.margin = 0;
                     windGust.innerText = 'Gust: ' + gust_mph + 'mph';
                     weatherBrkdwn.appendChild(windMPH);
                     weatherBrkdwn.appendChild(windDeg);
