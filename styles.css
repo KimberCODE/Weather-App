@@ -24,31 +24,34 @@ body{
 
   /* Location */
 #location {
+  background-color: #7092a1;
+  width: 450px;
+  padding: 10px;
+  font-size: 16pt;
   display: flex;
-  text-align: center;
   justify-content: center;
+  text-align: center;
   border-radius: 50px;
   border-color: #7092a1;
   border-width: 2px;
-  background-color: #7092a1;
-  width: auto;
-  padding: 10px;
 }
 #location-img-bckgrd {
+  width: 100vw;
+  margin: 0px;
+  padding: 0px;
+  background-color: #c9dbe3;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* padding-top: 40px; */
-  background-color: #c9dbe3;
-  width: 100vw;
-  margin: 0px;
-  padding: 0px;
 }
 #locationInfo {
   display: flex;
   justify-content: space-evenly;
-  width: 500px;
+  width: 400px;
+  border: 2px dotted black;
+  border-radius: 50px;
+  padding: 15px;
 }
 
 /* Current Info */
@@ -73,28 +76,11 @@ body{
   border-radius: 50px;
   font-size: 10pt;
   background-color: #c9dbe3;
-  border-color: #c9dbe3;
+  border: 1px solid black;
   margin: 20px;
   height: 40px;
   width: 90px;
 }
-/* @media (max-width: 350px) {
-  #precipitation {
-    flex-direction: column;
-  }
-}
-
-
-@media (max-width: 250px) {
-  #location {
-    font-size: 8pt;
-  }
-}
-@media (min-width: 350px) {
-  #location {
-    font-size: 12pt;
-  }
-} */
 
 /* Bottom Info/Breakdown */
 #btm-precip-info {
@@ -102,14 +88,12 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  /* flex-direction: column; */
   padding: 10px;
 }
 #precip-btns {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  /* padding: 10px; */
   background-color: #c9dbe3;
 }
 #headline {
@@ -122,7 +106,11 @@ body{
   text-align: center;
 }
 #weather-breakdowns{
-      padding: 40px;
+      padding: 15px;
+      border: 2px dotted black;
+      border-radius: 50px;
+      width: 150px;
+    
 }
 
 /* Circle Buttons */
@@ -131,7 +119,7 @@ body{
   border-radius: 50%;
   display: inline-block;
   border: black 1px solid;
-  width: 8px;
-  height: 8px;
+  width: 15px;
+  height: 15px;
   margin: 5px;
 }
