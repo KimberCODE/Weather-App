@@ -21,10 +21,8 @@ body{
   justify-content: center;
   align-items: center;
 }
-form {
-  /* width: 100vw; */
-}
-/* Location */
+
+  /* Location */
 #location {
   display: flex;
   text-align: center;
