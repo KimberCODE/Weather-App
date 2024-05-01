@@ -8,7 +8,9 @@ body{
 /* Navbar Area */
 .container-fluid {
   background-color: #7092a1;
+  display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 #zip {
@@ -20,7 +22,7 @@ body{
   align-items: center;
 }
 form {
-  width: 100vw;
+  /* width: 100vw; */
 }
 /* Location */
 #location {
