@@ -1,6 +1,10 @@
 *{
   font-family: Georgia, Times, 'Times New Roman', serif
 }
+body{
+  display: grid;
+  grid-template-rows: 1fr 5fr 2fr 5fr 2fr;
+}
 /* Navbar Area */
 .container-fluid {
   background-color: #7092a1;
@@ -11,15 +15,9 @@
   background-color: #c9dbe3;
 }
 
-nav,
-#zip,
-#areaZip {
-  height: 25px;
-}
-
 .d-flex {
-  justify-content: flex-end;
-  text-align: right;
+  justify-content: center;
+  align-items: center;
 }
 form {
   width: 100vw;
@@ -33,18 +31,19 @@ form {
   border-color: #7092a1;
   border-width: 2px;
   background-color: #7092a1;
-  width: 50%;
+  width: auto;
+  padding: 10px;
 }
 #location-img-bckgrd {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 40px;
+  /* padding-top: 40px; */
   background-color: #c9dbe3;
   width: 100vw;
   margin: 0px;
-  padding: 20px;
+  padding: 0px;
 }
 #locationInfo {
   display: flex;
@@ -79,7 +78,7 @@ form {
   height: 40px;
   width: 90px;
 }
-@media (max-width: 350px) {
+/* @media (max-width: 350px) {
   #precipitation {
     flex-direction: column;
   }
@@ -95,7 +94,7 @@ form {
   #location {
     font-size: 12pt;
   }
-}
+} */
 
 /* Bottom Info/Breakdown */
 #btm-precip-info {
@@ -103,28 +102,27 @@ form {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  /* flex-direction: column; */
   padding: 10px;
 }
 #precip-btns {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px;
+  /* padding: 10px; */
   background-color: #c9dbe3;
 }
 #headline {
-  margin: 0;
-  padding: 10px;
+  padding: 20px;
   background-color: #7092a1;
   border-radius: 50px;
   border-color: #7092a1;
   border-width: 2px;
-  width: 50%;
+  width: 300px;
   text-align: center;
 }
 #weather-breakdowns{
-  padding: 10px;;
+      padding: 40px;
 }
 
 /* Circle Buttons */
